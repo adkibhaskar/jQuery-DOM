@@ -1,0 +1,74 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulating DOM using Jquery</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script>
+       $(document).ready(function(){
+        $("#button1").click(function(){
+            $("ol").append("<li>New Item</li>");
+        });
+        $("#button2").click(function(){
+            $("ol").before("<b>Element:Before</b>");
+        });
+        $("#button3").click(function(){
+            $("ol").after("<b>Element:After</b>");
+        });
+       })
+    </script>
+</head>
+<body>
+    <ol>
+        <li>item#1</li>
+        <li>item#2</li>
+        <li>#item3</li>
+    </ol>
+    <br/>
+    <br/>
+    <button id="button1">Add List Element</button>
+    <button id="button2">Insert before</button>
+    <button id="button3">Insert After</button>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulating DOM Using Jquery</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+       $(document).ready(function(){
+        $("#button1").click(function(){
+            $("ol").append("<li>New Element</li>");
+        })
+        $("#button2").click(function(){
+            $("ol").before("<b>Element:Before</b>");
+        })
+        $("#button3").click(function(){
+            $("ol").after("<b>Element:After</b>")
+        })
+        $("#button4").click(function(){
+            $("ol").remove();
+        })
+       })
+    </script>
+</head>
+<body>
+    <ol>
+        <li>Item1</li>
+        <li>Item2</li>
+        <li>Item3</li>
+    </ol>
+    <br/>
+    <br/>
+    <button id="button1">Add Item</button>
+    <button id="button2">Insert Before</button>
+    <button id="button3">Insert After</button>
+    <button id="button4">Remove List</button>
+</body>
+</html>
